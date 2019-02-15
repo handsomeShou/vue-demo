@@ -1,13 +1,29 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <div is="Header"></div>
+    <div is="backgroundImage"></div>
+    <div is="BreadCrumb"></div>
+    <div is="AbstractEssay"></div>
+    <!-- <div is="companyInfo"></div> -->
+    <!-- 
+    <div is="ImageIcon"></div>
+    <div is="Footer"></div> -->
+    <!-- <router-view/> -->
   </div>
 </template>
 
 <script>
+import Header from './components/Header.vue'
+import ImageIcon from './components/ImageIcon.vue'
+import Footer from './components/Footer.vue'
+import BreadCrumb from "./components/BreadCrumb.vue"
+import backgroundImage from "./components/backgroundImage.vue"
+import companyInfo from "./components/companyInfo.vue"
+import AbstractEssay from "./components/AbstractEssay.vue"
+
 export default {
-  name: 'App'
+  components:{Header,ImageIcon,Footer,BreadCrumb,backgroundImage,companyInfo,AbstractEssay},
+  name: 'App',  
 }
 </script>
 
@@ -16,8 +32,5 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
