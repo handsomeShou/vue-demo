@@ -1,5 +1,8 @@
 <template>
-<div class="container ">
+<div>
+  <backgroundImage></backgroundImage>
+  <BreadCrumb></BreadCrumb>
+  <div class="container ">
   <div class="row">
     <div class="col-sm-12 col-md-8 textContent">
           <div class="col-md-2" >
@@ -19,11 +22,16 @@
     </div>
   </div>  
 </div>
+</div>
 </template>
 
 <script>
+import BreadCrumb from "./BreadCrumb.vue"
+import backgroundImage from "./backgroundImage.vue"
+
 export default {
   name: 'AbstractEssay',
+  components: {BreadCrumb,backgroundImage},
   data() {
     return {
       id: '',

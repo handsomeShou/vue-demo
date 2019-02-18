@@ -32,9 +32,9 @@ export default {
   data() {
     return {
       imgs: [
-        { isrc: "static/img/1.jpg", title: "test1" },
-        { isrc: "static/img/1.jpg", title: "test2" },
-        { isrc: "static/img/3.png", title: "test3" }
+        { isrc: "/static/image/1.jpg", title: "test1" },
+        { isrc: "/static/image/1.jpg", title: "test2" },
+        { isrc: "/static/image/1.jpg", title: "test3" }
       ]
     };
   },
@@ -43,9 +43,6 @@ export default {
 </script>
 
 <style>
-img {
-  margin: auto;
-  width: 100%;
-  height: 60%;
-}
+
+
 </style>

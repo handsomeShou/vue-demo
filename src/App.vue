@@ -1,14 +1,15 @@
 <template>
   <div id="app">
     <div is="Header"></div>
-    <div is="backgroundImage"></div>
-    <div is="BreadCrumb"></div>
-    <div is="AbstractEssay"></div>
+    <!-- <div is="backgroundImage"></div>
+    <div is="BreadCrumb"></div> -->
+    <router-view/> 
+    <!-- <div is="AbstractEssay"></div> -->
     <!-- <div is="companyInfo"></div> -->
     <!-- 
-    <div is="ImageIcon"></div>
-    <div is="Footer"></div> -->
-    <!-- <router-view/> -->
+    <div is="ImageIcon"></div>-->
+    <div is="Footer"></div> 
+    
   </div>
 </template>
 
@@ -20,9 +21,10 @@ import BreadCrumb from "./components/BreadCrumb.vue"
 import backgroundImage from "./components/backgroundImage.vue"
 import companyInfo from "./components/companyInfo.vue"
 import AbstractEssay from "./components/AbstractEssay.vue"
+import Emvironment from "./components/Env.vue"
 
 export default {
-  components:{Header,ImageIcon,Footer,BreadCrumb,backgroundImage,companyInfo,AbstractEssay},
+  components:{Header,ImageIcon,Footer,BreadCrumb,backgroundImage,companyInfo,AbstractEssay,Emvironment},
   name: 'App',  
 }
 </script>
